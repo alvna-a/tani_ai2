@@ -1,34 +1,31 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-import joblib
 import pandas as pd
+import joblib
 
 app = Flask(__name__)
-CORS(app)  # Penting agar Flutter bisa akses API
+CORS(app)
 
-# Load model
-model = joblib.load("crop_model.pkl")
-
-# Mapping hasil prediksi ke Bahasa Indonesia
-kamus = {
-    'rice': 'Padi',
-    'maize': 'Jagung',
-    'banana': 'Pisang',
-    'apple': 'Apel',
-    'mango': 'Mangga',
-    'chickpea': 'Kacang Arab'
-}
+model = joblib.load("crop_model.pkl")  # pastikan file ini ada
 
 @app.route('/predict', methods=['POST'])
 def predict():
-    try:
-        data = request.get_json()
-        df = pd.DataFrame([data])
-        prediction = model.predict(df)[0]
-        hasil = kamus.get(prediction, prediction)
-        return jsonify({"rekomendasi": hasil})
-    except Exception as e:
-        return jsonify({"error": str(e)}), 500
+    data = request.get_json()
+    df = pd.DataFrame([data])
+    prediction = model.predict(df)[0]
+    
+    kamus = {
+        'rice': 'Padi',
+        'maize': 'Jagung',
+        'banana': 'Pisang',
+        'apple': 'Apel',
+        'mango': 'Mangga',
+        'chickpea': 'Kacang Arab'
+    }
+    
+    return jsonify({
+        "rekomendasi": kamus.get(prediction, prediction)
+    })
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
