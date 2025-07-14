@@ -15,7 +15,7 @@ def predict():
     prediction = model.predict(df)[0]
     
     kamus = {
-        'rice': 'padi',
+    'rice': 'padi',
     'maize': 'jagung',
     'chickpea': 'kacang arab',
     'banana': 'pisang',
