@@ -7,14 +7,14 @@ import os
 app = Flask(__name__)
 CORS(app)
 
-model = joblib.load("crop_model.pkl")  # pastikan file ini ada
+model = joblib.load("crop_model.pkl")
 
 @app.route('/predict', methods=['POST'])
 def predict():
     data = request.get_json()
     df = pd.DataFrame([data])
     prediction = model.predict(df)[0]
-    
+
     kamus = {
         'rice': 'padi',
         'maize': 'jagung',
@@ -34,21 +34,21 @@ def predict():
     }
 
     gambar_url = {
-        'rice': 'https://example.com/images/rice.jpg',
-        'maize': 'https://example.com/images/maize.jpg',
-        'chickpea': 'https://example.com/images/chickpea.jpg',
-        'banana': 'https://example.com/images/banana.jpg',
-        'mango': 'https://example.com/images/mango.jpg',
-        'apple': 'https://example.com/images/apple.jpg',
-        'grapes': 'https://example.com/images/grapes.jpg',
-        'watermelon': 'https://example.com/images/watermelon.jpg',
-        'muskmelon': 'https://example.com/images/muskmelon.jpg',
-        'orange': 'https://example.com/images/orange.jpg',
-        'papaya': 'https://example.com/images/papaya.jpg',
-        'coconut': 'https://example.com/images/coconut.jpg',
-        'cotton': 'https://example.com/images/cotton.jpg',
-        'jute': 'https://example.com/images/jute.jpg',
-        'coffee': 'https://example.com/images/coffee.jpg'
+        'rice': 'https://raw.githubusercontent.com/alvna-a/tani_ai2/main/gambar/rice.jpg',
+        'maize': 'https://raw.githubusercontent.com/alvna-a/tani_ai2/main/gambar/maize.jpg',
+        'chickpea': 'https://raw.githubusercontent.com/alvna-a/tani_ai2/main/gambar/chickpea.jpg',
+        'banana': 'https://raw.githubusercontent.com/alvna-a/tani_ai2/main/gambar/banana.jpg',
+        'mango': 'https://raw.githubusercontent.com/alvna-a/tani_ai2/main/gambar/mango.jpg',
+        'apple': 'https://raw.githubusercontent.com/alvna-a/tani_ai2/main/gambar/apple.jpg',
+        'grapes': 'https://raw.githubusercontent.com/alvna-a/tani_ai2/main/gambar/grapes.jpg',
+        'watermelon': 'https://raw.githubusercontent.com/alvna-a/tani_ai2/main/gambar/watermelon.jpg',
+        'muskmelon': 'https://raw.githubusercontent.com/alvna-a/tani_ai2/main/gambar/muskmelon.jpg',
+        'orange': 'https://raw.githubusercontent.com/alvna-a/tani_ai2/main/gambar/orange.jpg',
+        'papaya': 'https://raw.githubusercontent.com/alvna-a/tani_ai2/main/gambar/papaya.jpg',
+        'coconut': 'https://raw.githubusercontent.com/alvna-a/tani_ai2/main/gambar/coconut.jpg',
+        'cotton': 'https://raw.githubusercontent.com/alvna-a/tani_ai2/main/gambar/cotton.jpg',
+        'jute': 'https://raw.githubusercontent.com/alvna-a/tani_ai2/main/gambar/jute.jpg',
+        'coffee': 'https://raw.githubusercontent.com/alvna-a/tani_ai2/main/gambar/coffee.jpg'
     }
 
     return jsonify({
