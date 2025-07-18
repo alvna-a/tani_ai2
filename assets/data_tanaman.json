@@ -1,0 +1,92 @@
+{
+  "rice": {
+    "nama": "Padi",
+    "deskripsi": "Padi adalah tanaman pokok masyarakat Indonesia yang tumbuh baik di dataran rendah dengan irigasi yang cukup.",
+    "manfaat": "Sumber utama karbohidrat yang menjadi bahan dasar nasi.",
+    "tips": "Tanam saat musim hujan, jaga tinggi air 5–10 cm, gunakan benih unggul dan pupuk NPK sesuai dosis."
+  },
+  "maize": {
+    "nama": "Jagung",
+    "deskripsi": "Jagung tumbuh optimal di lahan terbuka dengan sinar matahari penuh dan tanah yang subur.",
+    "manfaat": "Digunakan untuk makanan manusia, pakan ternak, dan bahan baku industri.",
+    "tips": "Tanam di musim panas, jarak tanam sekitar 25x75 cm, dan lakukan pemupukan bertahap."
+  },
+  "chickpea": {
+    "nama": "Kacang Arab",
+    "deskripsi": "Chickpea atau kacang arab tumbuh baik di iklim semi-kering dengan tanah lempung berpasir.",
+    "manfaat": "Tinggi protein dan serat, sering digunakan sebagai bahan hummus.",
+    "tips": "Tanam di tanah yang gembur dan kering, hindari genangan air, panen saat polong mengering."
+  },
+  "banana": {
+    "nama": "Pisang",
+    "deskripsi": "Pisang cocok tumbuh di dataran rendah hingga sedang dengan kelembapan tinggi.",
+    "manfaat": "Sumber energi alami, kaya vitamin B6 dan potasium.",
+    "tips": "Tanam di area lembap, pupuk secara teratur, pangkas anakan untuk fokus ke pohon utama."
+  },
+  "mango": {
+    "nama": "Mangga",
+    "deskripsi": "Mangga menyukai iklim tropis dengan musim kemarau yang jelas.",
+    "manfaat": "Buah kaya vitamin A dan C, baik untuk pencernaan.",
+    "tips": "Tanam di area terbuka, siram saat musim kemarau, lakukan pemangkasan cabang."
+  },
+  "apple": {
+    "nama": "Apel",
+    "deskripsi": "Apel tumbuh baik di dataran tinggi dengan suhu sejuk dan tanah yang netral.",
+    "manfaat": "Kaya antioksidan, serat, dan vitamin C.",
+    "tips": "Perlu suhu 15–22°C, lakukan pemangkasan rutin, tanam di tanah gembur dan kaya organik."
+  },
+  "grapes": {
+    "nama": "Anggur",
+    "deskripsi": "Anggur tumbuh baik di daerah beriklim panas dan kering dengan drainase tanah yang baik.",
+    "manfaat": "Kaya antioksidan dan digunakan untuk konsumsi segar atau fermentasi.",
+    "tips": "Tanam di tanah berpasir, beri penyangga rambat, dan pangkas untuk hasil optimal."
+  },
+  "watermelon": {
+    "nama": "Semangka",
+    "deskripsi": "Semangka cocok ditanam di daerah dengan cuaca panas dan kering.",
+    "manfaat": "Buah menyegarkan, kaya air, vitamin A dan C.",
+    "tips": "Tanam di tanah ringan berpasir, beri jarak antar tanaman, siram rutin saat berbunga."
+  },
+  "muskmelon": {
+    "nama": "Blewah",
+    "deskripsi": "Blewah atau melon wangi tumbuh baik di iklim hangat dan tanah berdrainase baik.",
+    "manfaat": "Kaya vitamin C dan air, cocok untuk berbuka puasa.",
+    "tips": "Gunakan sistem mulsa plastik, jaga kelembapan tanah, dan beri ajir."
+  },
+  "orange": {
+    "nama": "Jeruk",
+    "deskripsi": "Jeruk cocok ditanam di daerah dengan suhu sedang dan tanah subur.",
+    "manfaat": "Sumber utama vitamin C dan antioksidan.",
+    "tips": "Tanam di tanah gembur, beri jarak cukup, lakukan penyemprotan insektisida alami."
+  },
+  "papaya": {
+    "nama": "Pepaya",
+    "deskripsi": "Pepaya cepat tumbuh di iklim tropis dengan curah hujan sedang.",
+    "manfaat": "Melancarkan pencernaan, kaya vitamin A dan C.",
+    "tips": "Tanam dari biji, butuh sinar matahari penuh, siram teratur dan hindari air tergenang."
+  },
+  "coconut": {
+    "nama": "Kelapa",
+    "deskripsi": "Kelapa tumbuh subur di pantai dan daerah tropis dengan curah hujan tinggi.",
+    "manfaat": "Air kelapa menyegarkan, daging buah bisa diolah, serbaguna.",
+    "tips": "Tanam di dekat pantai atau dataran rendah, beri ruang cukup antar pohon."
+  },
+  "cotton": {
+    "nama": "Kapas",
+    "deskripsi": "Kapas tumbuh di iklim hangat dan memerlukan masa kering saat panen.",
+    "manfaat": "Sumber utama serat untuk tekstil dan benang.",
+    "tips": "Tanam saat awal musim kemarau, jaga kelembapan tanah awal, panen saat buah mengering."
+  },
+  "jute": {
+    "nama": "Jut",
+    "deskripsi": "Jut atau kenaf cocok di lahan basah tropis, sering ditemukan di lahan rawa.",
+    "manfaat": "Digunakan sebagai bahan karung, tekstil, dan bio-plastik.",
+    "tips": "Tanam di lahan lembap, panen saat batang berumur ± 120 hari."
+  },
+  "coffee": {
+    "nama": "Kopi",
+    "deskripsi": "Kopi tumbuh baik di dataran tinggi dengan suhu 20–25°C dan curah hujan merata.",
+    "manfaat": "Minuman berkafein yang populer untuk meningkatkan fokus dan energi.",
+    "tips": "Tanam di bawah naungan pohon besar, lakukan pemangkasan tunas air, panen saat buah merah."
+  }
+}
