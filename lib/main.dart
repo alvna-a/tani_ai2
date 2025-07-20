@@ -75,7 +75,7 @@ class _CropRecommendationPageState extends State<CropRecommendationPage> {
   }
 
   Future<void> predictCrop() async {
-    var url = Uri.parse('https://taniaibackend-production.up.railway.app//predict');
+    var url = Uri.parse('https://taniaibackend-production.up.railway.app/predict');
     var response = await http.post(
       url,
       headers: {"Content-Type": "application/json"},

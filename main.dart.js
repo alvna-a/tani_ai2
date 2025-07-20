@@ -74132,7 +74132,7 @@ return A.P(null,r)}})
 return A.Q($async$wr,r)},
 wZ(){var s=0,r=A.R(t.H),q=this,p,o,n,m
 var $async$wZ=A.S(function(a,b){if(a===1)return A.O(b,r)
-while(true)switch(s){case 0:p=A.hW("https://taniaibackend-production.up.railway.app//predict")
+while(true)switch(s){case 0:p=A.hW("https://taniaibackend-production.up.railway.app/predict")
 o=t.N
 n=A.aI(["Content-Type","application/json"],o,o)
 s=2
